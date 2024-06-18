@@ -1,0 +1,21 @@
+import { Box, styled, Text } from '@ignite-call-ui-docs/react'
+
+export const Form = styled(Box, {
+  display: 'grid',
+  gridTemplateColumns: '1fr auto',
+  gap: '$2',
+  marginTop: '$4',
+  padding: '$4',
+
+  '@media(max-wdith: 600px)': {
+    gridTemplateColumns: '1fr',
+  },
+})
+
+export const FormAnnotation = styled('div', {
+  marginTop: '$2',
+
+  [`> ${Text}`]: {
+    color: '$gray400',
+  },
+})
